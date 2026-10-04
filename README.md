@@ -1,6 +1,6 @@
 # FinTrack - Personal Finance Manager
 
-[![CI Pipeline](https://github.com/abrahem-salhab/Personal-Finance-Manager/actions/workflows/ci.yml/badge.svg)](https://github.com/abrahem-salhab/Personal-Finance-Manager/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/Ibrahim-salhab/FinTrack/actions/workflows/ci.yml/badge.svg)](https://github.com/Ibrahim-salhab/FinTrack/actions/workflows/ci.yml)
 [![Java](https://img.shields.io/badge/Java-17%20%7C%2021-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4%20%7C%204.x-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -286,6 +286,6 @@ docker compose up --build -d
 ---
 
 ## 👤 Author
-- **Developer:** Abrahem Salhab
+- **Developer:** Ibrahim Salhab
 - **Email:** ibrahimsalhab18@gmail.com
-- **GitHub:** [abrahem-salhab](https://github.com/abrahem-salhab)
+- **GitHub:** [Ibrahim-salhab](https://github.com/Ibrahim-salhab)

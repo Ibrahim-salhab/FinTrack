@@ -21,7 +21,7 @@ public class OpenApiConfig {
                         .title("Personal Finance Manager API")
                         .version("1.0.0")
                         .description("REST API for Personal Finance Manager - Income, Expense, Budgeting, and Analytics")
-                        .contact(new Contact().name("Abrahem Salhab").email("ibrahimsalhab18@gmail.com"))
+                        .contact(new Contact().name("Ibrahim Salhab").email("ibrahimsalhab18@gmail.com"))
                         .license(new License().name("Apache 2.0").url("https://springdoc.org")))
                 .addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
                 .components(new Components()
