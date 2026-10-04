@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, Search, Plus, Bell, LogOut, User as UserIcon } from 'lucide-react';
-import { GeminiBananaLogo } from './GeminiBananaLogo';
+import { FinTrackLogo } from './FinTrackLogo';
 import { useAuth } from '../../context/AuthContext';
 import { Button } from './Button';
 
@@ -21,7 +21,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-40 h-14 bg-white border-b border-[#E5E5E5] px-4 flex items-center justify-between shadow-[0_1px_2px_rgba(0,0,0,0.06)]">
-      {/* Left: Hamburger + Gemini Banana Logo */}
+      {/* Left: Hamburger + FinTrack Logo */}
       <div className="flex items-center gap-4 min-w-[220px]">
         <button
           type="button"
@@ -32,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({
           <Menu className="w-5 h-5" />
         </button>
 
-        <GeminiBananaLogo size="sm" />
+        <FinTrackLogo size="sm" />
       </div>
 
       {/* Center: Search Bar */}

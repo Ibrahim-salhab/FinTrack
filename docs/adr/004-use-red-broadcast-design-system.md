@@ -1,7 +1,7 @@
-# ADR 004: Implement Red Broadcast Design System with Gemini Banana Branding
+# ADR 004: Implement Red Broadcast Design System with FinTrack Branding
 
 ## Context
-The user requested applying the **Red Broadcast** design system specifications (`design.md`) and incorporating **Gemini Banana** as the project logo, branding, and visual identity.
+The user requested applying the **Red Broadcast** design system specifications (`design.md`) and incorporating **FinTrack** as the project logo, branding, and visual identity.
 
 ## Decision
 - Implemented Red Broadcast design tokens:
@@ -10,7 +10,7 @@ The user requested applying the **Red Broadcast** design system specifications (
   - Surface `#F2F2F2` for inputs, cards, and sidebar active items.
   - Typography: Google Font `Roboto` and `Roboto Mono`.
   - Component models: 56px sticky top bar, 44px central search bar, collapsible left rail (72px / 240px), 9999px pill buttons and chips.
-- Incorporated Gemini Banana vector assets (`/banana-logo.svg` and `/banana-hero.svg`) across the application, login, registration, and statements.
+- Incorporated FinTrack vector assets (`/fintrack-logo.svg` and `/fintrack-hero.svg`) across the application, login, registration, and statements.
 
 ## Trade-offs
 - Provides a recognizable aesthetic that stands out from generic admin dashboards while preserving data density.

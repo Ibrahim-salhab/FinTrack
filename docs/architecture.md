@@ -1,7 +1,7 @@
 # Architecture Documentation
 
 ## System Overview
-The **Personal Finance Manager** (Gemini Banana) is designed as a **Modular Monolith** backend paired with a **Single Page Application (SPA)** frontend, tailored for high developer velocity, clear domain separation, and enterprise robustness.
+The **Personal Finance Manager** (FinTrack) is designed as a **Modular Monolith** backend paired with a **Single Page Application (SPA)** frontend, tailored for high developer velocity, clear domain separation, and enterprise robustness.
 
 ```mermaid
 flowchart TD

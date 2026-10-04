@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { GeminiBananaLogo } from '../components/common/GeminiBananaLogo';
+import { FinTrackLogo } from '../components/common/FinTrackLogo';
 import { Button } from '../components/common/Button';
 import { Mail, Lock, ArrowRight } from 'lucide-react';
 
@@ -34,7 +34,7 @@ export const Login: React.FC = () => {
       {/* Left Column: Form */}
       <div className="w-full lg:w-1/2 flex flex-col justify-between p-8 sm:p-12 lg:p-16">
         <div>
-          <GeminiBananaLogo size="md" />
+          <FinTrackLogo size="md" />
         </div>
 
         <div className="max-w-md w-full mx-auto my-8">
@@ -115,7 +115,7 @@ export const Login: React.FC = () => {
         </div>
 
         <div className="text-xs text-[#606060] text-center lg:text-left">
-          &copy; {new Date().getFullYear()} Gemini Banana Inc. All rights reserved. Red Broadcast Engine.
+          &copy; {new Date().getFullYear()} FinTrack Inc. All rights reserved. Red Broadcast Engine.
         </div>
       </div>
 
@@ -130,8 +130,8 @@ export const Login: React.FC = () => {
 
         <div className="w-full max-w-lg my-auto">
           <img
-            src="/banana-hero.svg"
-            alt="Gemini Banana Financial Suite"
+            src="/fintrack-hero.svg"
+            alt="FinTrack Financial Suite"
             className="w-full rounded-2xl shadow-2xl border border-white/10"
           />
           <div className="mt-8 text-center text-white">

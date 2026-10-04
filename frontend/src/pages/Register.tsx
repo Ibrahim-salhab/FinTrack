@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { GeminiBananaLogo } from '../components/common/GeminiBananaLogo';
+import { FinTrackLogo } from '../components/common/FinTrackLogo';
 import { Button } from '../components/common/Button';
 import { Mail, Lock, User as UserIcon, ArrowRight } from 'lucide-react';
 
@@ -46,14 +46,14 @@ export const Register: React.FC = () => {
       {/* Left Column: Register Form */}
       <div className="w-full lg:w-1/2 flex flex-col justify-between p-8 sm:p-12 lg:p-16">
         <div>
-          <GeminiBananaLogo size="md" />
+          <FinTrackLogo size="md" />
         </div>
 
         <div className="max-w-md w-full mx-auto my-8">
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-[#0F0F0F] tracking-tight">Create Your Account</h1>
             <p className="text-sm text-[#606060] mt-2">
-              Start managing your expenses, revenues, and budgets with Gemini Banana.
+              Start managing your expenses, revenues, and budgets with FinTrack.
             </p>
           </div>
 
@@ -163,7 +163,7 @@ export const Register: React.FC = () => {
         </div>
 
         <div className="text-xs text-[#606060] text-center lg:text-left">
-          &copy; {new Date().getFullYear()} Gemini Banana Inc. All rights reserved.
+          &copy; {new Date().getFullYear()} FinTrack Inc. All rights reserved.
         </div>
       </div>
 
@@ -178,8 +178,8 @@ export const Register: React.FC = () => {
 
         <div className="w-full max-w-lg my-auto">
           <img
-            src="/banana-hero.svg"
-            alt="Gemini Banana Financial Suite"
+            src="/fintrack-hero.svg"
+            alt="FinTrack Financial Suite"
             className="w-full rounded-2xl shadow-2xl border border-white/10"
           />
           <div className="mt-8 text-center text-white">

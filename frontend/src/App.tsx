@@ -18,7 +18,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
       <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="flex flex-col items-center gap-3">
           <div className="w-8 h-8 border-3 border-[#FF0000] border-t-transparent rounded-full animate-spin" />
-          <span className="text-sm font-medium text-[#606060]">Loading Gemini Banana...</span>
+          <span className="text-sm font-medium text-[#606060]">Loading FinTrack...</span>
         </div>
       </div>
     );

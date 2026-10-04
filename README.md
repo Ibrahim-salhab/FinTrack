@@ -1,4 +1,4 @@
-# Gemini Banana - Personal Finance Manager
+# FinTrack - Personal Finance Manager
 
 [![CI Pipeline](https://github.com/abrahem-salhab/Personal-Finance-Manager/actions/workflows/ci.yml/badge.svg)](https://github.com/abrahem-salhab/Personal-Finance-Manager/actions/workflows/ci.yml)
 [![Java](https://img.shields.io/badge/Java-17%20%7C%2021-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
@@ -10,12 +10,12 @@
 
 A production-grade, full-stack Personal Finance Manager built with **Java (Spring Boot)** and **React (TypeScript)**, featuring JWT authentication, automated Flyway migrations, monthly budget enforcement, financial telemetry, dynamic trend analytics, and direct CSV/PDF report exports.
 
-Designed and styled according to the **Red Broadcast** design system with **Gemini Banana** branding.
+Designed and styled according to the **Red Broadcast** design system with **FinTrack** branding.
 
 ---
 
 ## 📌 Project Overview
-**Gemini Banana (Personal Finance Manager)** is engineered to give users control over their financial health through an intuitive interface. It solves the friction of traditional personal bookkeeping through:
+**FinTrack (Personal Finance Manager)** is engineered to give users control over their financial health through an intuitive interface. It solves the friction of traditional personal bookkeeping through:
 1. Fast ledger entry and real-time category distribution.
 2. Hard & soft monthly budget caps with color-coded alerts (Green / Orange / Red).
 3. Live trend charts showing income vs. expense velocity over 6 to 12 months.
@@ -46,7 +46,7 @@ Designed and styled according to the **Red Broadcast** design system with **Gemi
 - **Design System & UX:**
   - Built with the **Red Broadcast** design system (#FF0000 Broadcast Red, #0F0F0F Near Black, #F2F2F2 Surface).
   - Collapsible navigation rail (72px to 240px) and sticky top bar (56px).
-  - Custom vector Gemini Banana branding and responsive layout.
+  - Custom vector FinTrack branding and responsive layout.
 
 ---
 
@@ -67,7 +67,7 @@ Designed and styled according to the **Red Broadcast** design system with **Gemi
 - **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`), Red Broadcast Design System
 - **Routing:** React Router DOM v7
 - **Icons:** Lucide React
-- **Brand Assets:** Gemini Banana custom SVG vector illustrations
+- **Brand Assets:** FinTrack custom SVG vector illustrations
 
 ### DevOps & Tooling
 - Docker & Docker Compose

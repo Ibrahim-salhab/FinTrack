@@ -48,7 +48,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed }) => {
       {!isCollapsed && (
         <div className="p-4 border-t border-[#E5E5E5] text-[12px] text-[#606060] space-y-2">
           <div className="flex items-center justify-between">
-            <span className="font-medium text-[#0F0F0F]">Gemini Banana</span>
+            <span className="font-medium text-[#0F0F0F]">FinTrack</span>
             <span className="text-[10px] bg-[#F2F2F2] text-[#606060] px-1.5 py-0.5 rounded font-mono">v1.0.0</span>
           </div>
           <p className="text-[11px] leading-relaxed">
