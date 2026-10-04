@@ -23,7 +23,7 @@ export const FinTrackLogo: React.FC<LogoProps> = ({ className = '', showText = t
     <div className={`flex items-center gap-2.5 select-none ${className}`}>
       <div className={`relative flex items-center justify-center rounded-xl bg-[#0F0F0F] p-1.5 shadow-sm ${sizeMap[size]}`}>
         <img src="/fintrack-logo.svg" alt="FinTrack" className="w-full h-full object-contain" />
-        {/* Red Broadcast Accent Dot */}
+        {/* Accent Status Dot */}
         <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-[#FF0000] rounded-full border-2 border-white" />
       </div>
 

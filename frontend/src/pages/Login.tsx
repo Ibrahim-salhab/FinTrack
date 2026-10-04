@@ -115,7 +115,7 @@ export const Login: React.FC = () => {
         </div>
 
         <div className="text-xs text-[#606060] text-center lg:text-left">
-          &copy; {new Date().getFullYear()} FinTrack Inc. All rights reserved. Red Broadcast Engine.
+          &copy; {new Date().getFullYear()} FinTrack Inc. All rights reserved.
         </div>
       </div>
 

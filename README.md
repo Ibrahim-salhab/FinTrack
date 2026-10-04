@@ -10,7 +10,7 @@
 
 A production-grade, full-stack Personal Finance Manager built with **Java (Spring Boot)** and **React (TypeScript)**, featuring JWT authentication, automated Flyway migrations, monthly budget enforcement, financial telemetry, dynamic trend analytics, and direct CSV/PDF report exports.
 
-Designed and styled according to the **Red Broadcast** design system with **FinTrack** branding.
+Designed and styled according to a **Content-First** design system with **FinTrack** branding.
 
 ---
 
@@ -44,7 +44,7 @@ Designed and styled according to the **Red Broadcast** design system with **FinT
   - Downloadable CSV spreadsheets (via Apache Commons CSV).
   - Formatted PDF statements (via OpenPDF).
 - **Design System & UX:**
-  - Built with the **Red Broadcast** design system (#FF0000 Broadcast Red, #0F0F0F Near Black, #F2F2F2 Surface).
+  - Built with a modern **Content-First** design system (#FF0000 Broadcast Red, #0F0F0F Near Black, #F2F2F2 Surface).
   - Collapsible navigation rail (72px to 240px) and sticky top bar (56px).
   - Custom vector FinTrack branding and responsive layout.
 
@@ -64,7 +64,7 @@ Designed and styled according to the **Red Broadcast** design system with **FinT
 
 ### Frontend
 - **Framework:** React 19, TypeScript, Vite
-- **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`), Red Broadcast Design System
+- **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`), Custom Design System Tokens
 - **Routing:** React Router DOM v7
 - **Icons:** Lucide React
 - **Brand Assets:** FinTrack custom SVG vector illustrations
@@ -80,7 +80,7 @@ Designed and styled according to the **Red Broadcast** design system with **FinT
 
 ### System Architecture
 ```text
-Browser / Client (React 19 + TypeScript + Red Broadcast)
+Browser / Client (React 19 + TypeScript)
                         │
                         ▼ (HTTP / REST)
        Spring Boot 3/4 Application Server
@@ -240,7 +240,7 @@ docker compose up --build -d
    Stateless Bearer JWTs enable horizontal container scaling and eliminate sticky session dependencies.
 3. **OpenPDF & Commons CSV for Server-side Exports:**
    Exporting PDFs and CSVs server-side guarantees consistency across devices and operating systems.
-4. **Tailwind CSS v4 + Red Broadcast:**
+4. **Tailwind CSS v4 + Design System:**
    Tailwind v4 delivers faster compilation times without extra configuration files, paired with high-contrast accessibility tokens.
 
 ---

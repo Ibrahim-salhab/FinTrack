@@ -5,7 +5,7 @@ The **Personal Finance Manager** (FinTrack) is designed as a **Modular Monolith*
 
 ```mermaid
 flowchart TD
-    Client["React Frontend (SPA)<br/>Vite + TypeScript + Red Broadcast"]
+    Client["React Frontend (SPA)<br/>Vite + TypeScript + Modern Design System"]
     Nginx["Nginx Reverse Proxy"]
     API["Spring Boot Backend (REST API)"]
     DB[(PostgreSQL / H2 Fallback)]
@@ -48,7 +48,7 @@ PostgreSQL Database
   - Global REST exception handler translating all errors into standardized `ApiErrorResponse` payloads.
 
 ## Frontend Architecture
-The frontend is built with React 19, TypeScript, Vite, and Tailwind CSS v4, styled strictly in accordance with the **Red Broadcast** design system:
+The frontend is built with React 19, TypeScript, Vite, and Tailwind CSS v4, styled strictly in accordance with the **Content-First** design system:
 - **State Management**:
   - Server state fetched via `src/services/api.ts` with standard promise resolution and live custom events.
   - Client authentication state encapsulated in `AuthContext` with persistent local storage.

@@ -178,7 +178,7 @@ export const Transactions: React.FC = () => {
         </div>
       )}
 
-      {/* Red Broadcast Filter Bar */}
+      {/* Filter Bar */}
       <div className="bg-white p-4 rounded-xl border border-[#E5E5E5] shadow-xs space-y-4">
         {/* Horizontal Chips Bar */}
         <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">

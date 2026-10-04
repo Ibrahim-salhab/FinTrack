@@ -52,7 +52,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed }) => {
             <span className="text-[10px] bg-[#F2F2F2] text-[#606060] px-1.5 py-0.5 rounded font-mono">v1.0.0</span>
           </div>
           <p className="text-[11px] leading-relaxed">
-            Red Broadcast Engine
+            Modern Financial Platform
           </p>
           <a
             href="http://localhost:8080/swagger-ui/index.html"

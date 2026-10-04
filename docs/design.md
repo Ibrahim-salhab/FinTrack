@@ -1,7 +1,7 @@
-# Red Broadcast
+# Content-First Design System
 
 ## Overview
-A content-first design system engineered for video consumption at scale. Red Broadcast uses a signature red accent sparingly against clean white and dark surfaces, letting video thumbnails dominate the visual landscape. The aesthetic is efficient and grid-driven — designed for rapid scanning across thousands of videos while maintaining a consistent, recognizable framework that works from mobile to living room screens.
+A content-first design system engineered for high density and rapid consumption at scale. It uses a signature red accent sparingly against clean white and dark surfaces, letting financial figures and data dominate the visual landscape. The aesthetic is efficient and grid-driven — designed for rapid scanning while maintaining a consistent, recognizable framework that works across screens.
 
 ## Colors
 - **Primary** (#FF0000): Subscribe button, live badges, progress bars — Broadcast Red
