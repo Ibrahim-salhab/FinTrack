@@ -311,7 +311,7 @@ export const Dashboard: React.FC = () => {
       <div className="bg-white p-6 rounded-2xl border border-[#E5E5E5] shadow-xs">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h3 className="font-bold text-base text-[#0F0F0F]">Recent Broadcast Records</h3>
+            <h3 className="font-bold text-base text-[#0F0F0F]">Recent Transactions</h3>
             <p className="text-xs text-[#606060] mt-0.5">Most recent ledger updates</p>
           </div>
           <Link to="/transactions">

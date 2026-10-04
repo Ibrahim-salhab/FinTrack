@@ -14,6 +14,46 @@ Designed and styled according to a **Content-First** design system with **FinTra
 
 ---
 
+## 📸 Application Showcase
+
+### 📊 Real-time Financial Dashboard
+![FinTrack Dashboard](docs/screenshots/02_dashboard.png)
+
+### 💳 Transaction Ledger & Quick Filters
+![FinTrack Transactions](docs/screenshots/03_transactions.png)
+
+### 🎯 Monthly Budgets & Spending Caps
+![FinTrack Budgets](docs/screenshots/05_budgets.png)
+
+### 📈 Financial Statements & Analytics
+![FinTrack Reports](docs/screenshots/06_reports.png)
+
+<details>
+<summary><b>🔍 View More Screens (Authentication & Record Creation)</b></summary>
+<br>
+
+#### Secure Authentication
+![FinTrack Login](docs/screenshots/01_login.png)
+
+#### New Transaction Modal
+![FinTrack Add Transaction](docs/screenshots/04_add_transaction_modal.png)
+
+</details>
+
+---
+
+## 🔑 Demo Account Credentials
+
+For quick evaluation without manual registration, use the pre-populated demo account:
+
+| Attribute | Value |
+| :--- | :--- |
+| **Email** | `demo@fintrack.app` |
+| **Password** | `Password123!` |
+| **Status** | Pre-populated with transactions, categories, and monthly budgets |
+
+---
+
 ## 📌 Project Overview
 **FinTrack (Personal Finance Manager)** is engineered to give users control over their financial health through an intuitive interface. It solves the friction of traditional personal bookkeeping through:
 1. Fast ledger entry and real-time category distribution.

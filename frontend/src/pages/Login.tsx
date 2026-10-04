@@ -124,7 +124,7 @@ export const Login: React.FC = () => {
         <div className="w-full flex justify-end">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-medium backdrop-blur-xs">
             <span className="w-2 h-2 rounded-full bg-[#FF0000] animate-pulse" />
-            Live Broadcast Dashboard
+            Live Real-time Dashboard
           </span>
         </div>
 

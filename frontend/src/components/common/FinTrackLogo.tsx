@@ -38,7 +38,7 @@ export const FinTrackLogo: React.FC<LogoProps> = ({ className = '', showText = t
             </span>
           </div>
           <span className="text-[11px] text-[#606060] font-normal tracking-wide">
-            Finance Broadcast
+            Personal Finance
           </span>
         </div>
       )}
