@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: pfm_db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-pfm_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pfm_password}
+      POSTGRES_DB: ${POSTGRES_DB:-pfm_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pfm_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-pfm_user} -d ${POSTGRES_DB:-pfm_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pfm_backend
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${POSTGRES_DB:-pfm_db}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-pfm_user}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-pfm_password}
+      SPRING_FLYWAY_URL: jdbc:postgresql://db:5432/${POSTGRES_DB:-pfm_db}
+      SPRING_FLYWAY_USER: ${POSTGRES_USER:-pfm_user}
+      SPRING_FLYWAY_PASSWORD: ${POSTGRES_PASSWORD:-pfm_password}
+      APPLICATION_SECURITY_JWT_SECRET_KEY: ${JWT_SECRET:-404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+      APPLICATION_SECURITY_JWT_EXPIRATION: ${JWT_EXPIRATION:-86400000}
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: pfm_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pfm_db_data:
