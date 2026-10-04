@@ -26,15 +26,29 @@ public interface TransactionRepository extends JpaRepository<Transaction, UUID> 
            "AND (:type IS NULL OR t.type = :type) " +
            "AND (:categoryId IS NULL OR t.category.id = :categoryId) " +
            "AND (:startDate IS NULL OR t.transactionDate >= :startDate) " +
-           "AND (:endDate IS NULL OR t.transactionDate <= :endDate) " +
-           "AND (:query IS NULL OR LOWER(t.description) LIKE LOWER(CONCAT('%', :query, '%')))")
-    Page<Transaction> findFiltered(
+           "AND (:endDate IS NULL OR t.transactionDate <= :endDate)")
+    Page<Transaction> findFilteredWithoutQuery(
             @Param("user") User user,
             @Param("type") TransactionType type,
             @Param("categoryId") UUID categoryId,
             @Param("startDate") LocalDate startDate,
             @Param("endDate") LocalDate endDate,
-            @Param("query") String query,
+            Pageable pageable
+    );
+
+    @Query("SELECT t FROM Transaction t WHERE t.user = :user " +
+           "AND (:type IS NULL OR t.type = :type) " +
+           "AND (:categoryId IS NULL OR t.category.id = :categoryId) " +
+           "AND (:startDate IS NULL OR t.transactionDate >= :startDate) " +
+           "AND (:endDate IS NULL OR t.transactionDate <= :endDate) " +
+           "AND LOWER(t.description) LIKE :queryPattern")
+    Page<Transaction> findFilteredWithQuery(
+            @Param("user") User user,
+            @Param("type") TransactionType type,
+            @Param("categoryId") UUID categoryId,
+            @Param("startDate") LocalDate startDate,
+            @Param("endDate") LocalDate endDate,
+            @Param("queryPattern") String queryPattern,
             Pageable pageable
     );
 

@@ -104,15 +104,28 @@ public class TransactionService {
 
         Pageable pageable = PageRequest.of(page, size, sort);
 
-        Page<Transaction> transactionPage = transactionRepository.findFiltered(
-                user,
-                type,
-                categoryId,
-                startDate,
-                endDate,
-                query != null && !query.trim().isEmpty() ? query.trim() : null,
-                pageable
-        );
+        Page<Transaction> transactionPage;
+        if (query != null && !query.trim().isEmpty()) {
+            String queryPattern = "%" + query.trim().toLowerCase() + "%";
+            transactionPage = transactionRepository.findFilteredWithQuery(
+                    user,
+                    type,
+                    categoryId,
+                    startDate,
+                    endDate,
+                    queryPattern,
+                    pageable
+            );
+        } else {
+            transactionPage = transactionRepository.findFilteredWithoutQuery(
+                    user,
+                    type,
+                    categoryId,
+                    startDate,
+                    endDate,
+                    pageable
+            );
+        }
 
         Page<TransactionResponse> responsePage = transactionPage.map(TransactionResponse::fromEntity);
         return PageResponse.fromPage(responsePage);

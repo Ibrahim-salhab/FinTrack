@@ -101,7 +101,7 @@ class TransactionServiceTest {
     @Test
     void getTransactions_ReturnsPageResponse() {
         Page<Transaction> page = new PageImpl<>(List.of(transaction));
-        when(transactionRepository.findFiltered(eq(user), isNull(), isNull(), isNull(), isNull(), isNull(), any(Pageable.class)))
+        when(transactionRepository.findFilteredWithoutQuery(eq(user), isNull(), isNull(), isNull(), isNull(), any(Pageable.class)))
                 .thenReturn(page);
 
         PageResponse<TransactionResponse> result = transactionService.getTransactions(
